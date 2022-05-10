@@ -1,0 +1,16 @@
+name: Iratus
+version: '${project.version}'
+main: com.jlmr.iratus.Iratus
+api-version: 1.18
+authors: [ JLMR ]
+description: Plugin for upcoming server
+commands:
+  skills:
+    description: opens skill menu
+    usage: /<command>
+    aliases: skillpage, skillmenu, skillgui
+
+  iratusgive:
+    description: gives you the Karui Scythe
+    usage: /<command>
+
