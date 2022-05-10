@@ -16,6 +16,7 @@ public class ItemManager{
     public static ItemStack karuikama;
     public static ItemStack omoikama;
     public static ItemStack unmeikama;
+    public static ItemStack izanagispear;
     public static ItemStack combatSkillItem;
     public static ItemStack agilitySkillItem;
     public static ItemStack guiBackGround;
@@ -127,5 +128,6 @@ public class ItemManager{
 
     public static void createIzanagiSpear(){
         ItemStack item = new ItemStack(Material.ARROW);
+        izanagispear = item;
     }
 }

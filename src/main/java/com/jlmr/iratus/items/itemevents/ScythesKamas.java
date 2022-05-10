@@ -22,7 +22,6 @@ public class ScythesKamas implements Listener {
         this.plugin = plugin;
     }
 
-
     @EventHandler
     public void onRightClick(PlayerInteractEvent e){
         Player player = e.getPlayer();
