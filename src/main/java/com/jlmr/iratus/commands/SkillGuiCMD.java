@@ -16,14 +16,10 @@ public class SkillGuiCMD implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if(cmd.getName().equalsIgnoreCase("skills")) {
-            if (sender instanceof Player) {
-                Player player = (Player) sender;
-                plugin.openMainSkillPage(player);
-
-            }
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
+            plugin.openMainSkillPage(player);
         }
-
         return true;
     }
 }

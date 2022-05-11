@@ -18,7 +18,7 @@ public class GiveCommands implements CommandExecutor {
                     return true;
                 } else {
                     if (args[1].equalsIgnoreCase("karuikama")) {
-                        player.getInventory().addItem(ItemManager.karuikama);
+                        player.getInventory().addItem(ItemManager.izanagispear);
                     }
                 }
             }

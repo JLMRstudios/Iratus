@@ -128,6 +128,11 @@ public class ItemManager{
 
     public static void createIzanagiSpear(){
         ItemStack item = new ItemStack(Material.ARROW);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("Izanagi Spear");
+        List<String> lore = new ArrayList<>();
+        meta.setLore(lore);
+        item.setItemMeta(meta);
         izanagispear = item;
     }
 }

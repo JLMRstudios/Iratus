@@ -2,7 +2,7 @@ name: Iratus
 version: '${project.version}'
 main: com.jlmr.iratus.Iratus
 api-version: 1.18
-authors: [ JLMR ]
+authors: [ JLMR, Dyleux ]
 description: Plugin for upcoming server
 commands:
   skills:

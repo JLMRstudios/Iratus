@@ -85,6 +85,19 @@ public final class Iratus extends JavaPlugin {
         mainSkillGUI.setItem(42, ItemManager.guiBackGround);
         mainSkillGUI.setItem(43, ItemManager.guiBackGround);
         mainSkillGUI.setItem(44, ItemManager.guiBackGround);
-        mainSkillGUI.setItem(45, ItemManager.guiBackGround);
+    }
+
+    public void openCombatMainPage(Player p){
+
+        Inventory combatGUI = Bukkit.createInventory(p, 45, "combat");
+
+
+    }
+
+    public void openAgilityMainPage(Player p){
+
+        Inventory agilityGUI = Bukkit.createInventory(p, 45, "agility");
+
+
     }
 }

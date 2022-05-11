@@ -7,6 +7,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class ClassChoiceOpen implements Listener {
 
+    public boolean hasPlayedIratusBefore = false;
+
     @EventHandler
     public void onFirstJoin(PlayerJoinEvent e){
         Player p = e.getPlayer();
@@ -15,6 +17,7 @@ public class ClassChoiceOpen implements Listener {
            return;
         }
         else{
+            hasPlayedIratusBefore = true;
         }
     }
 }

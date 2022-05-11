@@ -65,6 +65,7 @@ public class CombatSkill implements Listener {
             }
         }
 
+
         if (combatXp >= 1000.0){
             milestone1 = true;
         }
@@ -76,13 +77,13 @@ public class CombatSkill implements Listener {
         }
 
         if (milestone1 == true){
-            milestone = milestone + 1;
+            milestone++;
         }
         if (milestone2 == true){
-            milestone = milestone + 1;
+            milestone++;
         }
         if (milestone3 == true){
-            milestone = milestone + 1;
+            milestone++;
         }
     }
 }

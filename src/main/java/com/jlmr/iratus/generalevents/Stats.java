@@ -56,7 +56,7 @@ public class Stats implements Listener {
     }
 
     @EventHandler
-    public void regenIntelligence(PlayerJoinEvent e){
+    public void regenRune(PlayerJoinEvent e){
         new BukkitRunnable(){
             public void run() {
                 int calculatedInt = maxRune * 1/100;
