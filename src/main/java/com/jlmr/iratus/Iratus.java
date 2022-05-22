@@ -8,16 +8,25 @@ import com.jlmr.iratus.generalevents.Stats;
 import com.jlmr.iratus.items.ItemManager;
 import com.jlmr.iratus.items.itemevents.ScythesKamas;
 import com.jlmr.iratus.skills.CombatSkill;
+import net.minecraft.server.level.ServerPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public final class Iratus extends JavaPlugin {
+
+    private List<ServerPlayer> npcs = new ArrayList<>();
+    private static Iratus plugin;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
+        plugin = this;
+
         ItemManager.init();
 
         this.getServer().getConsoleSender().sendMessage("Wassup homie");
@@ -29,6 +38,13 @@ public final class Iratus extends JavaPlugin {
 
         this.getCommand("iratusgive").setExecutor(new GiveCommands());
         this.getCommand("skills").setExecutor(new SkillGuiCMD(this));
+    }
+    public List<ServerPlayer> getNpcs() {
+        return npcs;
+    }
+
+    public static Iratus getPlugin() {
+        return plugin;
     }
 
     @Override

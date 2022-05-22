@@ -25,7 +25,10 @@ public class IzanagiSpears implements Listener {
         final Player player = event.getPlayer();
         if(event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)){
             if (player.getItemInHand().equals(ItemManager.izanagispear)) {
-                if (event.getAction() == Action.LEFT_CLICK_AIR){
+
+                //  ability functionality test.
+                player.sendMessage("Ability worked I think???");
+
                     new BukkitRunnable(){
                         double t = 0;
 
@@ -45,7 +48,6 @@ public class IzanagiSpears implements Listener {
                             }
                         }
                     }.runTaskTimer(plugin, 0, 1);
-                }
             }
         }
     }

@@ -1,10 +1,14 @@
 package com.jlmr.iratus.items;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.RecipeChoice;
+import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
@@ -88,6 +92,13 @@ public class ItemManager{
         meta.setLore(lore);
         item.setItemMeta(meta);
         karuikama = item;
+
+        ShapedRecipe sr1 = new ShapedRecipe(NamespacedKey.minecraft("karuikama"), item);
+        sr1.shape(" TT", " E ", " T ");
+        sr1.setIngredient('T', Material.ARROW);
+        sr1.setIngredient('E', Material.NETHER_STAR);
+        Bukkit.getServer().addRecipe(sr1);
+
     }
 
     public static void createOmoiKama(){
@@ -134,5 +145,12 @@ public class ItemManager{
         meta.setLore(lore);
         item.setItemMeta(meta);
         izanagispear = item;
+
+        ShapedRecipe sr1 = new ShapedRecipe(NamespacedKey.minecraft("izanagispear"), item);
+        sr1.shape(" T ", " E ", " T ");
+        sr1.setIngredient('T', Material.ARROW);
+        sr1.setIngredient('E', Material.NETHER_STAR);
+        Bukkit.getServer().addRecipe(sr1);
+
     }
 }
